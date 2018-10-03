@@ -470,6 +470,7 @@ static void NORETURN_ATTR usb_thread(void)
             usb_stack_enable(true);
 
             usb_detect_charging_only(true);
+            usb_charging_only = true;
 
 #ifndef USB_DETECT_BY_REQUEST
             usb_set_host_present(true);
